@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gazeta do Litoral - O seu portal de notícias regional com as principais informações sobre política, economia, esportes e cultura.">
+    <meta name="keywords" content="notícias, litoral, política, economia, segurança, cultura, turismo">
+    <meta name="author" content="Alunos do 1º Ano B">
+    <title>Gazeta do Litoral | Notícias Regionais em Tempo Real</title>
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonte Google: Inter para legibilidade jornalística -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- BARRA SUPERIOR DEINFORMAÇÕES -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <span class="date-today">Quinta-feira, 17 de Setembro de 2026</span>
+            <div class="top-links">
+                <a href="#newsletter">Newsletter</a>
+                <a href="#admin">Painel do Leitor</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CABEÇALHO PRINCIPAL -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#">
+                    <span class="logo-badge">GL</span>
+                    <h1>GAZETA <span>DO LITORAL</span></h1>
+                </a>
+            </div>
+            
+            <!-- BUSCA -->
+            <div class="search-box">
+                <form action="#" method="GET" class="search-form" role="search">
+                    <input type="search" placeholder="Buscar notícias, matérias..." aria-label="Buscar notícias">
+                    <button type="submit" aria-label="Pesquisar">🔍</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- MENU DE NAVEGAÇÃO -->
+        <nav class="main-nav" aria-label="Navegação Principal">
+            <div class="container">
+                <ul class="nav-list">
+                    <li><a href="#" class="active">Página Inicial</a></li>
+                    <li><a href="#noticias">Notícias</a></li>
+                    <li><a href="#politica">Política</a></li>
+                    <li><a href="#economia">Economia</a></li>
+                    <li><a href="#seguranca">Segurança</a></li>
+                    <li><a href="#esportes">Esportes</a></li>
+                    <li><a href="#cultura">Cultura</a></li>
+                    <li><a href="#turismo">Turismo</a></li>
+                    <li><a href="#regiao">Região</a></li>
+                    <li><a href="#opiniao">Opinião</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL DO SITE -->
+    <main class="container main-layout">
+        
+        <!-- SEÇÃO PRINCIPAL DE CONTEÚDO (ESQUERDA / CENTRO) -->
+        <div class="content-area">
+
+            <!-- MANCHETE PRINCIPAL E SECUNDÁRIAS -->
+            <section class="hero-section">
+                <!-- MANCHETE PRINCIPAL -->
+                <article class="hero-main card">
+                    <div class="badge badge-accent">Turismo & Infraestrutura</div>
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Orla marítima reformada e movimentada com turistas" class="card-img">
+                    <div class="hero-content">
+                        <h2><a href="#">Projeto de Revitalização da Orla Central entra em fase final de obras</a></h2>
+                        <p>Iniciativa visa impulsionar o turismo local, criar novos espaços de lazer acessíveis e gerar mais de 500 empregos diretos para a comunidade na temporada.</p>
+                        <span class="meta-info">Por <strong>Redação GL</strong> • Há 2 horas</span>
+                    </div>
+                </article>
+
+                <!-- NOTÍCIAS SECUNDÁRIAS AO LADO -->
+                <div class="hero-secondary">
+                    <article class="card card-small">
+                        <span class="badge badge-primary">Economia</span>
+                        <h3><a href="#">Porto Regional bate recorde histórico de movimentação no último trimestre</a></h3>
+                        <span class="meta-info">Há 4 horas</span>
+                    </article>
+
+                    <article class="card card-small">
+                        <span class="badge badge-primary">Segurança</span>
+                        <h3><a href="#">Operação Verão reforça patrulhamento em praias e áreas comerciais</a></h3>
+                        <span class="meta-info">Há 5 horas</span>
+                    </article>
+
+                    <article class="card card-small">
+                        <span class="badge badge-primary">Cultura</span>
+                        <h3><a href="#">Festival Gastronômico da Tainha começa neste final de semana com programação gratuita</a></h3>
+                        <span class="meta-info">Há 6 horas</span>
+                    </article>
+                </div>
+            </section>
+
+            <!-- FEED DE ÚLTIMAS NOTÍCIAS EM CARDS -->
+            <section class="latest-news-section" id="noticias">
+                <div class="section-header">
+                    <h2>Últimas Notícias</h2>
+                    <a href="#" class="see-more">Ver todas →</a>
+                </div>
+
+                <div class="cards-grid">
+                    <!-- Card 1 -->
+                    <article class="card grid-card">
+                        <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=400&q=80" alt="Sede da prefeitura municipal">
+                        <div class="card-body">
+                            <span class="badge badge-primary">Política</span>
+                            <h3><a href="#">Câmara aprova projeto de incentivo às startups de tecnologia na região</a></h3>
+                            <p>Proposta prevê isenção fiscal para novos negócios de inovação instalados na cidade.</p>
+                            <span class="meta-info">17 Set, 2026</span>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="card grid-card">
+                        <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=400&q=80" alt="Atletas correndo em evento esportivo">
+                        <div class="card-body">
+                            <span class="badge badge-primary">Esportes</span>
+                            <h3><a href="#">Maratona Aquática do Litoral abre inscrições para competidores amadores</a></h3>
+                            <p>Prova tradicional espera reunir mais de mil atletas de diferentes estados no próximo mês.</p>
+                            <span class="meta-info">17 Set, 2026</span>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="card grid-card">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=400&q=80" alt="Sala de aula de escola pública moderna">
+                        <div class="card-body">
+                            <span class="badge badge-primary">Educação</span>
+                            <h3><a href="#">Escolas da rede municipal recebem novos laboratórios de robótica</a></h3>
+                            <p>Estudantes do 1º ao 9º ano terão aulas práticas de programação e tecnologia da informação.</p>
+                            <span class="meta-info">16 Set, 2026</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- NOTÍCIAS POR CATEGORIA (CATEGORIA EM DESTAQUE) -->
+            <section class="category-block-section" id="economia">
+                <div class="section-header">
+                    <h2>Especial: Desenvolvimento Regional</h2>
+                </div>
+
+                <div class="category-container">
+                    <article class="card featured-cat-card">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="Pessoas trabalhando em escritório">
+                        <div class="card-body">
+                            <span class="badge badge-primary">Economia</span>
+                            <h3><a href="#">Feira de Empregabilidade disponibiliza mais de 300 vagas no centro de convenções</a></h3>
+                            <p>Oportunidades contemplam níveis fundamental, médio e superior em diversos setores da indústria e comércio local.</p>
+                            <div class="share-buttons">
+                                <span>Compartilhe:</span>
+                                <a href="#" class="share-btn">Facebook</a>
+                                <a href="#" class="share-btn">WhatsApp</a>
+                                <a href="#" class="share-btn">X</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- EXEMPLO DE ARTIGO COMPLETO (PÁGINA INDIVIDUAL INTEGRADA) -->
+            <section class="single-article-demo" id="artigo-demo">
+                <div class="section-header">
+                    <h2>Matéria em Destaque (Leitura Completa)</h2>
+                </div>
+                <article class="full-article">
+                    <span class="badge badge-accent">Reportagem Especial</span>
+                    <h1>Conservação da Mata Atlântica no Litoral ganha reforço com monitoramento via drones</h1>
+                    <p class="subtitle">Tecnologia desenvolvida em universidades locais ajuda a combater o desmatamento ilegal e proteger espécies nativas.</p>
+
+                    <div class="author-bar">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Autor da notícia" class="author-thumb">
+                        <div>
+                            <span class="author-name">Por <strong>Mariana Castro</strong></span>
+                            <span class="meta-info">Publicado em 17/09/2026 às 09:30</span>
+                        </div>
+                    </div>
+
+                    <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=800&q=80" alt="Drone voando sobre floresta preservada" class="article-hero-img">
+
+                    <div class="article-content">
+                        <p>A proteção das áreas de preservação permanente no litoral ganhou um importante aliado tecnológico. Desde o início deste mês, equipes ambientais contam com drones de alta precisão dotados de câmeras térmicas e inteligência artificial.</p>
+                        
+                        <p>O projeto é fruto de uma parceria entre o Instituto de Meio Ambiente e pesquisadores locais. Com o novo sistema, é possível identificar atividades irregulares antes que danos irreversíveis aconteçam à fauna e flora nativas.</p>
+                        
+                        <blockquote class="article-quote">
+                            "A tecnologia nos permite cobrir em poucas horas uma extensão territorial que levaria dias a pé. É um avanço sem precedentes para a sustentabilidade da nossa região."
+                            <cite>— Dra. Camila Alencar, Coordenadora do Projeto</cite>
+                        </blockquote>
+
+                        <p>A expectativa é expandir o programa para toda a faixa costeira até o final do ano, garantindo que o desenvolvimento econômico da região ocorra em permanente harmonia com o meio ambiente.</p>
+                    </div>
+
+                    <div class="social-share-box">
+                        <h4>Gostou da matéria? Compartilhe:</h4>
+                        <div class="share-buttons">
+                            <a href="#" class="share-btn">WhatsApp</a>
+                            <a href="#" class="share-btn">Facebook</a>
+                            <a href="#" class="share-btn">X / Twitter</a>
+                            <a href="#" class="share-btn">LinkedIn</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+        </div>
+
+        <!-- BARRA LATERAL (SIDEBAR) -->
+        <aside class="sidebar">
+
+            <!-- BLOCO DE MAIS LIDAS -->
+            <div class="widget widget-popular">
+                <h3 class="widget-title">Mais Lidas</h3>
+                <ol class="popular-list">
+                    <li>
+                        <span class="rank-number">1</span>
+                        <a href="#">Concurso Público abre 150 vagas para nível médio e superior na prefeitura</a>
+                    </li>
+                    <li>
+                        <span class="rank-number">2</span>
+                        <a href="#">Previsão do Tempo: Frente fria traz chuvas rápidas no fim de semana</a>
+                    </li>
+                    <li>
+                        <span class="rank-number">3</span>
+                        <a href="#">Nova linha de transporte coletivo intermunicipal entra em operação</a>
+                    </li>
+                    <li>
+                        <span class="rank-number">4</span>
+                        <a href="#">Obras na ponte da rodovia principal alteram o trânsito nesta quarta</a>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- PUBLICIDADE -->
+            <div class="widget widget-ad">
+                <span class="ad-label">Publicidade</span>
+                <div class="ad-box">
+                    <p><strong>Comércio Local</strong></p>
+                    <p>Anuncie sua empresa no maior portal do Litoral!</p>
+                    <a href="#" class="ad-button">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- BLOCO DE OPINIÃO / COLUNISTAS -->
+            <div class="widget widget-opinion" id="opiniao">
+                <h3 class="widget-title">Opinião</h3>
+                <div class="opinion-item">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&q=80" alt="Colunista" class="opinion-thumb">
+                    <div>
+                        <span class="columnist-name">Carlos Eduardo</span>
+                        <h4><a href="#">O futuro do trabalho sustentável e os desafios regionais</a></h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAINEL ADMINISTRATIVO (Simulado para fins de avaliação) -->
+            <div class="widget widget-admin" id="admin">
+                <h3 class="widget-title">Painel de Redação</h3>
+                <p>Área administrativa para envio de pautas e conteúdos.</p>
+                <form class="admin-form" action="#" method="POST" onclick="event.preventDefault(); alert('Modo de demonstração: envio simulado com sucesso!');">
+                    <input type="text" placeholder="Título da Notícia" required>
+                    <select required>
+                        <option value="">Selecione a Categoria</option>
+                        <option value="noticias">Notícias</option>
+                        <option value="politica">Política</option>
+                        <option value="esportes">Esportes</option>
+                    </select>
+                    <label style="font-size: 0.8rem; margin-top: 5px; display:block;">Agendar Publicação:</label>
+                    <input type="datetime-local" required>
+                    <button type="submit" class="btn-primary">Enviar Matéria</button>
+                </form>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <!-- BLOCO DE NEWSLETTER -->
+    <section class="newsletter-section" id="newsletter">
+        <div class="container newsletter-container">
+            <div class="newsletter-text">
+                <h2>Fique por dentro das notícias da sua região</h2>
+                <p>Receba diariamente no seu e-mail os principais destaques, análises e resumos das notícias do litoral.</p>
+            </div>
+            <form class="newsletter-form" action="#" method="POST" onclick="event.preventDefault(); alert('Inscrição realizada com sucesso!');">
+                <input type="email" placeholder="Digite seu melhor e-mail" required aria-label="E-mail para Newsletter">
+                <button type="submit" class="btn-accent">Inscrever-se</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- RODAPÉ INSTITUCIONAL -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <!-- Sobre -->
+            <div class="footer-col">
+                <h3 class="footer-logo">GAZETA <span>DO LITORAL</span></h3>
+                <p>O Portal Gazeta do Litoral é um veículo jornalístico independente voltado à cobertura de fatos, prestação de serviço, cultura e desenvolvimento da região litorânea.</p>
+            </div>
+
+            <!-- Categorias Rápidas -->
+            <div class="footer-col">
+                <h4>Editorias</h4>
+                <ul class="footer-links">
+                    <li><a href="#politica">Política</a></li>
+                    <li><a href="#economia">Economia</a></li>
+                    <li><a href="#seguranca">Segurança</a></li>
+                    <li><a href="#esportes">Esportes</a></li>
+                    <li><a href="#turismo">Turismo & Cultura</a></li>
+                </ul>
+            </div>
+
+            <!-- Institucional -->
+            <div class="footer-col">
+                <h4>Institucional</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Expediente</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Fale Conosco / Anuncie</a></li>
+                </ul>
+            </div>
+
+            <!-- Redes Sociais e Projeto -->
+            <div class="footer-col">
+                <h4>Redes Sociais</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">YouTube</a>
+                </div>
+                <div class="school-info">
+                    <p><strong>Projeto Escolar:</strong></p>
+                    <p>Educação Digital e Computacional</p>
+                    <p>1º Ano B • Proposta Pedagógica</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Gazeta do Litoral. Todos os direitos reservados. Projeto Acadêmico sem fins comerciais.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
