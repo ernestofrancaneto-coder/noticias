@@ -1,41 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Alternar Tema Claro / Escuro
-    const themeBtn = document.createElement("button");
-    themeBtn.textContent = "🌙 Modo Escuro";
-    themeBtn.className = "theme-btn";
-    document.querySelector(".navbar").appendChild(themeBtn);
+    // Busca interativa em tempo real na barra de pesquisa do topo
+    const searchInput = document.getElementById("searchInput");
 
-    themeBtn.addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
-        if (document.body.classList.contains("dark-mode")) {
-            themeBtn.textContent = "☀️ Modo Claro";
-        } else {
-            themeBtn.textContent = "🌙 Modo Escuro";
-        }
-    });
+    if (searchInput) {
+        searchInput.addEventListener("keyup", (event) => {
+            const term = event.target.value.toLowerCase().trim();
+            const cards = document.querySelectorAll(".news-card, .featured-card");
 
-    // 2. Campo de Busca Dinâmico
-    const searchInput = document.createElement("input");
-    searchInput.type = "text";
-    searchInput.placeholder = "Buscar notícias...";
-    searchInput.className = "search-input";
-    
-    const container = document.querySelector(".container");
-    container.insertBefore(searchInput, container.firstChild);
+            cards.forEach(card => {
+                const title = card.querySelector("h2, h3") ? card.querySelector("h2, h3").textContent.toLowerCase() : "";
+                const category = card.querySelector(".category, .badge") ? card.querySelector(".category, .badge").textContent.toLowerCase() : "";
+                const description = card.querySelector("p") ? card.querySelector("p").textContent.toLowerCase() : "";
 
-    searchInput.addEventListener("keyup", (e) => {
-        const text = e.target.value.toLowerCase();
-        const articles = document.querySelectorAll("article");
-
-        articles.forEach(article => {
-            const title = article.querySelector("h2, h3").textContent.toLowerCase();
-            const content = article.querySelector("p").textContent.toLowerCase();
-
-            if (title.includes(text) || content.includes(text)) {
-                article.style.display = "block";
-            } else {
-                article.style.display = "none";
-            }
+                if (title.includes(term) || category.includes(term) || description.includes(term)) {
+                    card.style.display = "";
+                } else {
+                    card.style.display = "none";
+                }
+            });
         });
-    });
+    }
 });

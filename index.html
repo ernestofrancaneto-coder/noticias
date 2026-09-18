@@ -3,6 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folha do Litoral News - O Portal de Notícias do Litoral</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones e Fonte -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Faixa Topo Superior -->
+    <div class="top-bar">
+        <div class="top-container">
+            <span class="date-info"><i class="far fa-calendar-alt"></i> Sexta-feira, Paranaguá e Litoral do Paraná</span>
+            <div class="top-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cabeçalho / Logo -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>FOLHA DO LITORAL</h1>
+                <span class="sub-logo">NEWS</span>
+                <p class="tagline">INFORMAÇÃO EM 1º LUGAR NO LITORAL DO PARANÁ</p>
+            </div>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Buscar no portal...">
+                <button type="button"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#" class="active"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="#">Cidades</a></li>
+                <li><a href="#">Polícia</a></li>
+                <li><a href="#">Infraestrutura</a></li>
+                <li><a href="#">Ciência e Saúde</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Esportes</a></li>
+                <li><a href="#">Colunistas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal e Barra Lateral -->
+    <div class="main-wrapper">
+        <main class="content-area">
+
+            <!-- Notícia Principal em Destaque -->
+            <section class="main-featured">
+                <article class="featured-card">
+                    <div class="badge">INFRAESTRUTURA</div>
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80" alt="Obras na Orla de Guaratuba">
+                    <div class="featured-text">
+                        <h2>Guaratuba receberá investimentos para requalificação da orla e engorda da faixa de areia</h2>
+                        <p>Projeto de infraestrutura visa impulsionar o turismo e modernizar o calçadão nas praias do litoral do Paraná.</p>
+                        <span class="meta-time"><i class="far fa-clock"></i> Publicado há 2 horas</span>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Grade de Notícias (Grid Secundário) -->
+            <section class="news-grid">
+                
+                <article class="news-card">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=500&q=80" alt="Superagui">
+                    <div class="card-body">
+                        <span class="category">TURISMO</span>
+                        <h3>Visitação ao Parque Nacional do Superagui cresce e movimenta a economia caiçara</h3>
+                        <p>A ilha atrai turistas em busca de contato com a natureza e turismo de experiência na região.</p>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=500&q=80" alt="Matinhos">
+                    <div class="card-body">
+                        <span class="category">EDUCAÇÃO</span>
+                        <h3>Matinhos dá passo decisivo para a construção de novo prédio escolar</h3>
+                        <p>Novas salas de aula modernas e estrutura ampliada irão atender centenas de alunos.</p>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=500&q=80" alt="Surfe Litoral">
+                    <div class="card-body">
+                        <span class="category">ESPORTES</span>
+                        <h3>Campeonato regional de surfe reúne atletas nas praias de Paranaguá e Pontal</h3>
+                        <p>Competição promete movimentar o final de semana no litoral com atletas de diversas categorias.</p>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=500&q=80" alt="Saúde">
+                    <div class="card-body">
+                        <span class="category">CIÊNCIA E SAÚDE</span>
+                        <h3>Atendimento especializado em Paranaguá reduz tempo de espera na rede de saúde</h3>
+                        <p>Ações de mutirão na rede municipal agilizam consultas e exames preventivos.</p>
+                    </div>
+                </article>
+
+            </section>
+        </main>
+
+        <!-- Barra Lateral (Sidebar) -->
+        <aside class="sidebar">
+            
+            <div class="sidebar-widget">
+                <h4 class="widget-title">ÚLTIMAS NOTÍCIAS</h4>
+                <ul class="latest-list">
+                    <li>
+                        <span class="time">16:30</span>
+                        <a href="#">Prefeitura intensifica ações de drenagem para prevenir alagamentos.</a>
+                    </li>
+                    <li>
+                        <span class="time">15:15</span>
+                        <a href="#">Nota Parnanguara sorteia prêmios em dinheiro para consumidores.</a>
+                    </li>
+                    <li>
+                        <span class="time">14:00</span>
+                        <a href="#">Festa do Rocio confirma atrações e Show de Prêmios deste ano.</a>
+                    </li>
+                    <li><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Gazeta do Litoral - O seu portal de notícias regional com as principais informações sobre política, economia, esportes e cultura.">
     <meta name="keywords" content="notícias, litoral, política, economia, segurança, cultura, turismo">
     <meta name="author" content="Alunos do 1º Ano B">
@@ -360,5 +492,41 @@
         </div>
     </footer>
 
+</body>
+</html>
+                        <span class="time">11:45</span>
+                        <a href="#">Copel apresenta plano de fornecimento contínuo para o litoral.</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h4 class="widget-title">OPINIÃO & COLUNISTAS</h4>
+                <div class="columnist-item">
+                    <div class="avatar"><i class="fas fa-user-circle"></i></div>
+                    <div class="col-info">
+                        <strong>Fala, Adalberto</strong>
+                        <p>O desenvolvimento portuário e o futuro da mobilidade urbana.</p>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>FOLHA DO LITORAL NEWS</h3>
+                <p>O maior portal de notícias do litoral paranaense. Cobertura completa de Paranaguá, Antonina, Morretes, Guaratuba, Matinhos, Pontal do Paraná e Guaraqueçaba.</p>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Folha do Litoral News. Projeto Acadêmico / Escolar. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
