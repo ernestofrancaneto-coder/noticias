@@ -3,95 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Folha do Litoral News - O Portal de Notícias do Litoral Paranaense</title>
+    <title>Folha do Litoral News - O Portal de Notícias do Litoral</title>
     
-    <!-- Meta Tags de SEO e Social -->
-    <meta name="description" content="Acompanhe as últimas notícias de Paranaguá, Matinhos, Guaratuba, Pontal do Paraná e região no Portal Folha do Litoral News.">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Folha do Litoral News - Portal de Notícias">
-    <meta property="og:description" content="Informação em 1º lugar no Litoral do Paraná.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://folhadolitoral.com.br">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <!-- CSS e Fontes Externa (FontAwesome + Google Fonts) -->
+    <meta name="description" content="Acompanhe as notícias de Paranaguá e região no Portal Folha do Litoral News.">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-
-    <!-- Schema.org (Dados Estruturados para Portais de Notícias) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "NewsMediaOrganization",
-      "name": "Folha do Litoral News",
-      "url": "https://folhadolitoral.com.br",
-      "logo": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-      "sameAs": [
-        "https://facebook.com",
-        "https://instagram.com",
-        "https://youtube.com"
-      ]
-    }
-    </script>
 </head>
 <body>
 
-    <!-- Link para pular direto ao conteúdo (Acessibilidade Keyboard Users) -->
     <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
-    <!-- Topo de Informações -->
-    <div class="top-bar" role="region" aria-label="Informações do cabeçalho">
+    <!-- Faixa Topo -->
+    <div class="top-bar">
         <div class="top-container">
             <span class="date-info">
                 <i class="far fa-calendar-alt" aria-hidden="true"></i> 
-                <time datetime="2026-09-18">Sexta-feira, 18 de Setembro de 2026</time> - Paranaguá e Região
+                Sexta-feira, Paranaguá e Região
             </span>
             <div class="top-actions">
                 <button id="themeToggleBtn" class="theme-toggle" aria-label="Alternar modo escuro">
                     <i class="fas fa-moon" aria-hidden="true"></i> <span class="theme-text">Modo Escuro</span>
                 </button>
-                <div class="top-links" aria-label="Redes Sociais">
-                    <a href="#" aria-label="Facebook da Folha do Litoral"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="Instagram da Folha do Litoral"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="YouTube da Folha do Litoral"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                <div class="top-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Cabeçalho / Logo e Busca -->
-    <header class="header" role="banner">
+    <!-- Cabeçalho -->
+    <header class="header">
         <div class="header-container">
             <div class="logo">
-                <a href="#" aria-label="Página inicial Folha do Litoral News">
+                <a href="#">
                     <h1>FOLHA DO LITORAL <span class="sub-logo">NEWS</span></h1>
                 </a>
                 <p class="tagline">INFORMAÇÃO EM 1º LUGAR NO LITORAL DO PARANÁ</p>
             </div>
             
-            <!-- Formulário de Busca Otimizado -->
-            <form class="search-box" id="searchForm" role="search" aria-label="Buscar Notícias">
-                <label for="searchInput" class="sr-only">Buscar no portal</label>
+            <form class="search-box" id="searchForm">
                 <input type="search" id="searchInput" placeholder="Buscar no portal..." autocomplete="off">
-                <button type="submit" aria-label="Executar busca">
+                <button type="submit" aria-label="Buscar">
                     <i class="fas fa-search" aria-hidden="true"></i>
                 </button>
             </form>
         </div>
     </header>
 
-    <!-- Menu de Navegação Com Suporte Mobile (Hambúrguer) -->
-    <nav class="navbar" role="navigation" aria-label="Menu Principal">
+    <!-- Menu -->
+    <nav class="navbar">
         <div class="nav-container">
-            <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Abrir menu de navegação">
+            <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav">
                 <i class="fas fa-bars" aria-hidden="true"></i> <span>MENU</span>
             </button>
             <ul class="nav-links" id="primaryNav">
-                <li><a href="#" class="active" aria-current="page"><i class="fas fa-home" aria-hidden="true"></i> Início</a></li>
+                <li><a href="#" class="active"><i class="fas fa-home" aria-hidden="true"></i> Início</a></li>
                 <li><a href="#">Cidades</a></li>
                 <li><a href="#">Polícia</a></li>
                 <li><a href="#">Infraestrutura</a></li>
@@ -103,22 +75,17 @@
         </div>
     </nav>
 
-    <!-- Conteúdo Principal e Sidebar -->
+    <!-- Conteúdo Principal -->
     <div class="main-wrapper" id="main-content">
         
-        <!-- Notificações e Feedback da Busca -->
-        <div id="searchFeedback" class="search-feedback" aria-live="polite"></div>
-
         <main class="content-area">
 
             <!-- Destaque Principal -->
-            <section aria-label="Notícia em Destaque">
+            <section>
                 <article class="featured-card">
                     <span class="badge">INFRAESTRUTURA</span>
                     <a href="#" class="img-container">
-                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80" 
-                             alt="Obras e engorda da faixa de areia na praia de Guaratuba" 
-                             width="1000" height="380" loading="eager">
+                        <img src="https://picsum.photos/1000/400?random=1" alt="Obras na Orla" width="1000" height="400">
                     </a>
                     <div class="featured-text">
                         <h2><a href="#">Guaratuba receberá investimentos para requalificação da orla e engorda da faixa de areia</a></h2>
@@ -128,13 +95,12 @@
                 </article>
             </section>
 
-            <!-- Grid de Notícias Secundárias -->
-            <section class="news-grid" aria-label="Últimas Notícias em Grade" id="newsGrid">
+            <!-- Grid de Notícias -->
+            <section class="news-grid">
                 
                 <article class="news-card">
                     <a href="#" class="img-container">
-                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=500&q=80" 
-                             alt="Parque Nacional do Superagui" width="500" height="160" loading="lazy">
+                        <img src="https://picsum.photos/500/250?random=2" alt="Superagui" width="500" height="250">
                     </a>
                     <div class="card-body">
                         <span class="category">TURISMO</span>
@@ -145,8 +111,7 @@
 
                 <article class="news-card">
                     <a href="#" class="img-container">
-                        <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=500&q=80" 
-                             alt="Estrutura de nova escola em Matinhos" width="500" height="160" loading="lazy">
+                        <img src="https://picsum.photos/500/250?random=3" alt="Escola Matinhos" width="500" height="250">
                     </a>
                     <div class="card-body">
                         <span class="category">EDUCAÇÃO</span>
@@ -157,8 +122,7 @@
 
                 <article class="news-card">
                     <a href="#" class="img-container">
-                        <img src="https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=500&q=80" 
-                             alt="Atleta surfando no mar" width="500" height="160" loading="lazy">
+                        <img src="https://picsum.photos/500/250?random=4" alt="Campeonato de Surfe" width="500" height="250">
                     </a>
                     <div class="card-body">
                         <span class="category">ESPORTES</span>
@@ -169,8 +133,7 @@
 
                 <article class="news-card">
                     <a href="#" class="img-container">
-                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=500&q=80" 
-                             alt="Profissional da saúde no atendimento" width="500" height="160" loading="lazy">
+                        <img src="https://picsum.photos/500/250?random=5" alt="Atendimento de Saúde" width="500" height="250">
                     </a>
                     <div class="card-body">
                         <span class="category">SAÚDE</span>
@@ -181,34 +144,33 @@
 
             </section>
 
-            <!-- Mensagem de Estado Vazio (Oculta por padrão) -->
-            <div id="noResults" class="no-results hidden" aria-live="polite">
+            <div id="noResults" class="no-results hidden">
                 <i class="fas fa-search" aria-hidden="true"></i>
                 <p>Nenhuma notícia encontrada com o termo pesquisado.</p>
             </div>
 
         </main>
 
-        <!-- Barra Lateral (Sidebar) -->
-        <aside class="sidebar" aria-label="Conteúdo Secundário">
+        <!-- Barra Lateral -->
+        <aside class="sidebar">
             
             <section class="sidebar-widget">
                 <h2 class="widget-title">ÚLTIMAS NOTÍCIAS</h2>
                 <ul class="latest-list">
                     <li>
-                        <time class="time" datetime="16:30">16:30</time>
+                        <span class="time">16:30</span>
                         <a href="#">Prefeitura intensifica ações de drenagem para prevenir alagamentos na região.</a>
                     </li>
                     <li>
-                        <time class="time" datetime="15:15">15:15</time>
+                        <span class="time">15:15</span>
                         <a href="#">Nota Parnanguara sorteia prêmios em dinheiro para moradores cadastrados.</a>
                     </li>
                     <li>
-                        <time class="time" datetime="14:00">14:00</time>
+                        <span class="time">14:00</span>
                         <a href="#">Festa do Rocio confirma programação oficial e atrações da edição.</a>
                     </li>
                     <li>
-                        <time class="time" datetime="11:45">11:45</time>
+                        <span class="time">11:45</span>
                         <a href="#">Plano de fornecimento de energia contínua é reforçado no litoral.</a>
                     </li>
                 </ul>
@@ -230,8 +192,8 @@
         </aside>
     </div>
 
-    <!-- Rodapé Completo -->
-    <footer class="footer" role="contentinfo">
+    <!-- Rodapé -->
+    <footer class="footer">
         <div class="footer-container">
             <div class="footer-brand">
                 <h2>FOLHA DO LITORAL NEWS</h2>
@@ -243,7 +205,6 @@
         </div>
     </footer>
 
-    <!-- Script Principal JS -->
     <script src="script.js" defer></script>
 </body>
 </html>

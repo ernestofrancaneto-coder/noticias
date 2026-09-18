@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Menu Responsivo Mobile (Hambúrguer)
+    // Menu Responsivo
     const menuToggle = document.getElementById("menuToggle");
     const primaryNav = document.getElementById("primaryNav");
 
@@ -11,12 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 2. Alternância de Tema (Modo Escuro com Persistência em LocalStorage)
+    // Modo Escuro com salvamento no navegador
     const themeToggleBtn = document.getElementById("themeToggleBtn");
     const themeText = themeToggleBtn ? themeToggleBtn.querySelector(".theme-text") : null;
     const themeIcon = themeToggleBtn ? themeToggleBtn.querySelector("i") : null;
 
-    // Verificar preferência anterior do usuário
     const savedTheme = localStorage.getItem("folha_theme");
     if (savedTheme === "dark") {
         document.body.classList.add("dark-mode");
@@ -29,16 +28,14 @@ document.addEventListener("DOMContentLoaded", () => {
             document.body.classList.toggle("dark-mode");
             const isDark = document.body.classList.contains("dark-mode");
 
-            // Atualizar armazenamento local
             localStorage.setItem("folha_theme", isDark ? "dark" : "light");
 
-            // Atualizar visual do botão
             if (themeText) themeText.textContent = isDark ? "Modo Claro" : "Modo Escuro";
             if (themeIcon) themeIcon.className = isDark ? "fas fa-sun" : "fas fa-moon";
         });
     }
 
-    // 3. Sistema de Busca e Filtragem de Notícias
+    // Sistema de Pesquisa
     const searchForm = document.getElementById("searchForm");
     const searchInput = document.getElementById("searchInput");
     const noResults = document.getElementById("noResults");
@@ -61,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        // Exibir ou ocultar aviso de "Nenhum resultado"
         if (noResults) {
             if (matchCount === 0) {
                 noResults.classList.remove("hidden");
@@ -72,14 +68,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (searchInput) {
-        // Evento ao digitar (Filtro em Tempo Real)
         searchInput.addEventListener("input", (e) => {
             executeSearch(e.target.value);
         });
     }
 
     if (searchForm) {
-        // Previne envio tradicional da página ao dar Enter/Submit
         searchForm.addEventListener("submit", (e) => {
             e.preventDefault();
             if (searchInput) executeSearch(searchInput.value);
